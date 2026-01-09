@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Simple Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="controls">
+        <!-- <button id="soundBtn" class="icon-btn">🔊</button> 
+        <button id="shareBtn" class="icon-btn">🔗</button> -->
+        <button id="menuBtn" class="icon-btn">☰</button>
+    </div>
+
+    <div id="clickArea">
+        <span id="counterValue">0</span>
+    </div>
+
+    <div id="settingsModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Settings</h3>
+                <button id="closeMenu">✖</button>
+            </div>
+            
+            <div class="setting-item">
+                <label>Background Color</label>
+                <input type="color" id="bgColor" value="#000000">
+            </div>
+            <div class="setting-item">
+                <label>Text Color</label>
+                <input type="color" id="textColor" value="#ffffff">
+            </div>
+            <div class="setting-item">
+                <label>Increment By</label>
+                <input type="number" id="incrementVal" value="1">
+            </div>
+            <div class="setting-item">
+                <label>Set Counter</label>
+                <input type="number" id="setVal">
+                <button id="applySet">Set</button>
+            </div>
+            <div class="setting-item">
+                <label>Limit (0 = None)</label>
+                <input type="number" id="limitVal" value="0">
+            </div>
+            <div class="setting-item">
+                <label>Vibration</label>
+                <input type="checkbox" id="vibrateToggle" checked>
+            </div>
+            <div class="setting-item">
+                <button id="resetBtn" class="danger-btn">Reset Counter</button>
+            </div>
+            <div class="setting-item">
+                <button id="aboutBtn" class="info-btn">? About</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
